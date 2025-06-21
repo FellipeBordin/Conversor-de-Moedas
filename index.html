@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversor de Moedas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="fade-in">💱 Conversor de Moedas</h1>
+
+    <div class="form-group slide-up">
+      <label for="amount">Valor em Real (R$)</label>
+      <input type="number" class="input-currency" placeholder="Digite o valor" />
+    </div>
+
+    <div class="form-group slide-up delay">
+      <label for="currency">Converter para:</label>
+      <select class="currency-select">
+        <option value="dolar">Dólar</option>
+        <option value="euro">Euro</option>
+        <option value="libra">Libra</option>
+        <option value="bitcoin">Bitcoin</option>
+      </select>
+    </div>
+
+    <button class="convert-button bounce-in">Converter</button>
+
+    <div class="results fade-in delay">
+      <p id="currency-name" >Dólar Americano</p>
+      <p class="currency-value-to-convert">R$ 0,00</p>
+      <p class="currency-value">--</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
